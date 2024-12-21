@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+}
+
+#creator-container, #armory-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    min-width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #ff4444;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.weapon-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weapon-item label {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.weapon-category {
+    font-weight: bold;
+    color: #4CAF50;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.ammo-input {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.weapon-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: auto;
+}
+
+#close-button {
+    background-color: #f44336;
+    margin-top: 20px;
+}
+
+#close-button:hover {
+    background-color: #da190b;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

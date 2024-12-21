@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Armory Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="creator-container" style="display: none;">
+        <h1>Création d'armurerie</h1>
+        <div class="form-group">
+            <label>Métier</label>
+            <select id="job-select">
+                <option value="">Sélectionnez un métier</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Armes disponibles</label>
+            <div id="weapons-list"></div>
+        </div>
+        <div id="error-message" class="error" style="display: none;">
+            Veuillez sélectionner un métier
+        </div>
+        <button id="save-button">Créer l'armurerie</button>
+    </div>
+    
+    <div id="armory-container" style="display: none;">
+        <h1>Armurerie</h1>
+        <div id="armory-weapons"></div>
+        <button id="close-button">Fermer</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
